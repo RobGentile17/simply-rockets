@@ -1,0 +1,164 @@
+.logo{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #rockets {
+    height: 15vh;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 3vh;
+  }
+  
+  #rockets span {
+    padding: 1%;
+    height: 80%;
+    width: 14vw;
+    display: flex;
+    justify-content: center;
+    font-size: 2vh;
+    align-items: center;
+    border-radius: 4em;
+    border: 3px solid red;
+  }
+  
+  .rocketInfo {
+    height: 950px;
+    padding: 30px;
+    font-size: 24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: ridge;
+    text-align: center;
+  }
+  * {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 20px;
+    text-align: center;
+    background-color: #fafafa;
+  }
+  
+  .logo {
+    margin-bottom: 20px;
+  }
+  .rocket-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .rocket-card {
+    width: 300px;
+    border: 1px solid #00000020;
+    border-radius: 2px;
+    text-align: left;
+    background-color: white;
+  }
+  
+  .rocket {
+    width: 300px;
+    /*border: 1px solid black;*/
+  }
+  
+  .title {
+    text-align: left;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000000dd;
+  }
+  
+  .likes-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .likes {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .like-button {
+    color: rgb(255, 127, 80);
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    transition: color 300ms;
+    cursor: pointer;
+  }
+  
+  .like-button:hover {
+    color: rgb(241, 71, 19);
+  }
+  
+  .like-button:active {
+    color: rgb(253, 159, 124);
+  }
+  
+  .like-button:focus {
+    outline: none;
+  }
+  
+  .comments {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 10px;
+    font-size: 0.85rem;
+  }
+  
+  .comments li {
+    margin: 2px 0;
+    letter-spacing: 0.2px;
+  }
+  
+  .comment-form {
+    width: 100%;
+    border-top: 1px solid #00000020;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .comment-input {
+    width: 83%;
+    border: none;
+    font-size: 0.8rem;
+  }
+  
+  .comment-input:focus {
+    outline: none;
+  }
+  
+  .comment-button {
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(92, 114, 238);
+    cursor: pointer;
+    transition: color 300ms;
+  }
+  
+  .comment-button:hover {
+    color: rgb(37, 68, 245);
+  }
+  
+  .comment-button:active {
+    color: rgb(127, 146, 250);
+  }
+  
+  .comment-button:focus {
+    outline: none;
+  }
+  #image-upload img {
+    height: 10rem;
+    width:14rem;
+  }
+  
+ 
