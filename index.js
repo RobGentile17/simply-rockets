@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function(){
-    console.log("text")
     const url = "https://api.spacexdata.com/v4/rockets"
     const heading = document.querySelector("div#rockets")
     const rocketName = document.querySelector("h3.name")
@@ -11,9 +10,10 @@ document.addEventListener("DOMContentLoaded", function(){
     const rocketMass = document.querySelector("span#weight")
     const rocketStatus = document.querySelector("span#status")
     const rocketCost = document.querySelector("span#cost")
-    const likeBttn = document.querySelector("button.like-button")
-    const commentForm = document.querySelector("form.comment-form")
-    const commentBttn = document.querySelector("button.comment-button")
+    const rocketLikes = document.querySelector("span.likes")
+    const likeButton = document.querySelector("button.like-button")
+    const commentForm = document.querySelector("ul.comments")
+    const commentButton = document.querySelector("button.comment-button")
 
     function numberWithCommas(x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -40,8 +40,26 @@ document.addEventListener("DOMContentLoaded", function(){
                     rocketMass.innerText = `${numberWithCommas(rocket.mass.lb)} lbs`
                     rocketStatus.innerText = rocket.active
                     rocketCost.innerText = `$${numberWithCommas(rocket.cost_per_launch)}`
+                    rocketLikes.innerText = "0 likes"
                 })
             })
         })
     })
+    commentButton.addEventListener("click", (event) => {
+        event.preventDefault()
+
+        const commentInput = document.querySelector("input.comment-input")
+        const newComment = commentInput.value  
+        newCommentItem = document.createElement("li")
+        newCommentItem.innerText = newComment
+
+        commentForm.append(newCommentItem)
+        commentInput.value = ""
+
+    })
+    likeButton.addEventListener("click", () => {
+        let numberOfLikes = parseInt(rocketLikes.innerText)
+        numberOfLikes++
+        rocketLikes.innerText = `${numberOfLikes} likes`
+     })
 })
