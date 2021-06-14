@@ -6,6 +6,7 @@
   #rockets {
     height: 15vh;
     background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
     align-items: center;
