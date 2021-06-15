@@ -1,3 +1,9 @@
+body {
+  background-image: url(background.jpg);
+  background-color: black;
+  background-blend-mode: darken;
+}
+
 .logo{
     text-align: center;
     background-color: rgb(255, 255, 255);
@@ -11,6 +17,7 @@
     justify-content: space-around;
     align-items: center;
     padding-bottom: 3vh;
+   background-image: url(background.jpg);
   }
   
   #rockets span {
@@ -19,30 +26,31 @@
     width: 14vw;
     display: flex;
     justify-content: center;
-    font-size: 2vh;
+    font-size: 3vh;
     align-items: center;
     border-radius: 4em;
-    border: 3px solid red;
+    border:3px solid rgb(255, 255, 255)
   }
   
   .rocketInfo {
     height: 950px;
-    padding: 30px;
-    font-size: 24px;
+    padding: 60px;
+    font-size: 32px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    border: ridge;
     text-align: center;
   }
   * {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    color: rgb(255, 255, 255);
   }
   
   body {
     padding: 20px;
     text-align: center;
     background-color: #fafafa;
+    background-image: url(background.jpg);
   }
   
   .logo {
@@ -55,11 +63,11 @@
   }
   
   .rocket-card {
-    width: 300px;
-    border: 1px solid #00000020;
-    border-radius: 2px;
-    text-align: left;
-    background-color: white;
+    width: 600px;
+    border-radius: 4px;
+    text-align: center;
+    /* background-color: white;
+    background-image: url(background.jpg); */
   }
   
   .rocket {
@@ -68,11 +76,11 @@
   }
   
   .title {
-    text-align: left;
+    text-align: center;
     padding: 15px 10px;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #000000dd;
+    color: #ffffff;
   }
   
   .likes-section {
@@ -83,13 +91,13 @@
   }
   
   .likes {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-weight: 600;
   }
   
   .like-button {
     color: rgb(255, 127, 80);
-    font-size: 1.5rem;
+    font-size: 4rem;
     border: none;
     background: none;
     transition: color 300ms;
@@ -112,7 +120,8 @@
     list-style-type: none;
     margin-left: 0;
     padding-left: 10px;
-    font-size: 0.85rem;
+    font-size: 2rem;
+    
   }
   
   .comments li {
@@ -122,19 +131,20 @@
   
   .comment-form {
     width: 100%;
-    border-top: 1px solid #00000020;
+    border-top: 1px solid #ffffff;
     padding: 10px;
     margin-top: 10px;
   }
   
   .comment-input {
-    width: 83%;
+    width: 50%;
     border: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    color: black
   }
   
   .comment-input:focus {
-    outline: none;
+    outline: black;
   }
   
   .comment-button {
@@ -158,8 +168,6 @@
     outline: none;
   }
   #image-upload img {
-    height: 10rem;
-    width:14rem;
+    height: 60rem;
+    width:80rem;
   }
-  
- 
