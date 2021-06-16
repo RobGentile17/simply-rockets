@@ -61,5 +61,5 @@ document.addEventListener("DOMContentLoaded", function(){
         let numberOfLikes = parseInt(rocketLikes.innerText)
         numberOfLikes++
         rocketLikes.innerText = `${numberOfLikes} likes`
-     })
+     })  
 })
