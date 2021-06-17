@@ -1,5 +1,5 @@
 body {
-  background-image: url(background.jpg);
+  background-image: url(images/background.jpg);
   background-color: black;
   background-blend-mode: darken;
 }
@@ -17,7 +17,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding-bottom: 3vh;
-   background-image: url(background.jpg);
+   background-image: url(images/background.jpg);
   }
   
   #rockets span {
@@ -50,7 +50,7 @@ body {
     padding: 20px;
     text-align: center;
     background-color: #fafafa;
-    background-image: url(background.jpg);
+    background-image: url(images/background.jpg);
   }
   
   .logo {
